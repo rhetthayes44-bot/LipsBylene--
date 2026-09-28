@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Discover fragrances, makeup, lip care, skincare, and body care at LipsByLene."
+    />
+    <meta name="theme-color" content="#f7d5dc" />
+    <title>LipsByLene | Your beauty, your signature</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <a class="brand" href="#home" aria-label="LipsByLene home">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span class="brand-name"
+          >LipsByLene<span class="brand-dot">.</span></span
+        >
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#products">Shop all</a>
+        <a href="#products" data-filter="fragrance">Fragrance</a>
+        <a href="#products" data-filter="makeup">Makeup</a>
+        <a href="#products" data-filter="lips">Lip care</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a
+        class="header-contact"
+        href="https://wa.me/2348066954262"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span aria-hidden="true">&#8599;</span> Chat with us
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/campaign.jpg"
+          alt=""
+          fetchpriority="high"
+        />
+        <div class="hero-wash" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">The LipsByLene beauty edit</p>
+          <h1 id="hero-title">A little more<br />you, <em>every day.</em></h1>
+          <p class="hero-copy">
+            Find your next favourite in fragrances, lip care, makeup, and
+            everyday skin essentials.
+          </p>
+          <div class="hero-actions">
+            <a class="hero-link" href="#products"
+              >Shop the collection <span aria-hidden="true">&rarr;</span></a
+            >
+            <a class="hero-text-link" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <span class="hero-caption">Little rituals. Lovely things.</span>
+      </section>
+
+      <section class="collection-intro" aria-label="Shop by mood">
+        <p class="eyebrow">Your feel-good favourites</p>
+        <h2>Beauty, in your own way.</h2>
+        <p>
+          From a scent that stays with you to soft lips and skin that feels
+          cared for.
+        </p>
+      </section>
+
+      <section id="products">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Picked with love</p>
+            <h2>The collection</h2>
+          </div>
+          <p class="product-count" id="product-count" aria-live="polite"></p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter products">
+          <button
+            class="filter-button is-active"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="fragrance"
+            aria-pressed="false"
+          >
+            Fragrance
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="makeup"
+            aria-pressed="false"
+          >
+            Makeup
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="lips"
+            aria-pressed="false"
+          >
+            Lip care
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="skincare"
+            aria-pressed="false"
+          >
+            Skincare
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="bodycare"
+            aria-pressed="false"
+          >
+            Body care
+          </button>
+        </div>
+        <p class="photo-note">
+          Editorial photos via
+          <a href="https://unsplash.com/" target="_blank" rel="noreferrer"
+            >Unsplash</a
+          >; product packaging may vary.
+        </p>
+        <div class="product-grid" id="product-list" aria-live="polite"></div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">A personal touch</p>
+          <h2>Need a little help choosing?</h2>
+          <p>
+            Tell us what you love and we’ll help you find your next beauty
+            favourite.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a
+            class="contact-button"
+            href="https://wa.me/2348066954262"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="contact-icon" aria-hidden="true">&#8599;</span>
+            <span
+              ><small>WhatsApp us</small
+              ><strong>+234 806 695 4262</strong></span
+            >
+          </a>
+          <a
+            class="contact-button contact-button-light"
+            href="tel:+2348066954262"
+          >
+            <span class="contact-icon" aria-hidden="true">&#9742;</span>
+            <span
+              ><small>Call us</small><strong>+234 806 695 4262</strong></span
+            >
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#home" aria-label="LipsByLene home">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span class="brand-name"
+          >LipsByLene<span class="brand-dot">.</span></span
+        >
+      </a>
+      <p>Beauty picks, chosen with care.</p>
+      <a href="https://wa.me/2348066954262" target="_blank" rel="noreferrer"
+        >Say hello <span aria-hidden="true">&#8599;</span></a
+      >
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
